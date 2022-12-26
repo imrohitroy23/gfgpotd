@@ -2,28 +2,24 @@ public class 26Dec {
     
 
     
-    void precompute(){
+void precompute(){
         // Code Here
     }
     long solve(long L, long R){
-        long count = 0;
-        long i = 1;
-        while(i<R){
-            long j = i<<1;
-            while(j<R){
-                long k = j<<1;
-                while(k<R){
-                    long num = i | j | k;
-                    if(L <= num && num <= R)
-                        count++;
-                    k = k<<1;
-                }
-                j = j<<1;
+
+        long ans=00;
+    for(int i=0;i<63;i++){
+        for(int j=i+1;j<63;j++){
+            for(int k=j+1;k<63;k++){
+                long c=0;
+                c|=(1L<<i);
+                c|=(1L<<j);
+                c|=(1L<<k);
+                if(c>=L && c<=R) ans++;
             }
-            i = i<<1;
         }
-        return count;
     }
-    
+    return ans;
+
 
 }
