@@ -1,5 +1,6 @@
 public class 18jan {
 
+
     //Function to find first node if the linked list has a loop.
     public static int findFirstNode(Node head){
         //code here\
