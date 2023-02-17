@@ -1,4 +1,10 @@
 public class 17Dec {
+
+
+
+
+
+    
         int waysToBreakNumber(int N){
             // code here
             long mod=1000000007;
