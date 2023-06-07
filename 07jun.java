@@ -1,4 +1,4 @@
-public class 06jun {
+public class 07jun {
     public int minFlips(int a, int b, int c) {
         int ans=0;
         while(a!=0 || b!=0 || c!=0){
